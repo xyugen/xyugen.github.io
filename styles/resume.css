@@ -1,0 +1,120 @@
+:root {
+    --color-primary: #65ca87;
+    --color-secondary: #4ba168;
+    --color-tertiary: #888882;
+    --color-foreground: #ecebd6;
+    --color-background: #111;
+    --color-white: #fff;
+
+    --transition: 75ms all;
+}
+
+.skills {
+    width: 28em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--color-secondary);
+}
+
+.profile {
+    flex-direction: row;
+}
+
+.profile>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skill {
+    opacity: .85;
+}
+
+.skill>img {
+    max-height: 4em;
+}
+
+#profile-pic {
+    width: 80%;
+    align-self: end;
+    border-radius: 50%;
+}
+
+/* NEW THEME */
+:root {
+    --color-primary: #d64444;
+    --color-secondary: #d64444;
+    --color-tertiary: #888882;
+    --color-foreground: #111;
+    --color-background: #ecebd6;
+    --color-white: #fff;
+
+    --transition: .15s ease-in-out;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 112px;
+}
+
+body {
+    cursor: url("../assets/cursor.png"), auto;
+    background-color: var(--color-background);
+}
+
+.nav {
+    color: var(--color-secondary);
+}
+
+.item {
+    max-width: 35em;
+    color: var(--color-foreground);
+    background: var(--color-white);
+    border: 2px solid #222;
+    box-shadow: 0.25em 0.25em;
+}
+
+.item:hover {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.contact>a {
+    font-weight: bold;
+    color: var(--color-foreground);
+    text-decoration: underline;
+    font-family: 'Fira Code', monospace;
+    transition: var(--transition);
+}
+
+.contact>a:hover {
+    background-color: var(--color-background);
+}
+
+.contact>.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.contact>.socials>a>img {
+    max-width: 2em;
+}
+
+.hide {
+    opacity: 0;
+}
+
+#bday-counter {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+/* MOBILE SCREENS */
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 64px;
+    }
+}
